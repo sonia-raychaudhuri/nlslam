@@ -197,7 +197,7 @@ table.data-table h3 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%;
+/*     padding-top: 56.25%; */
 }
 .vdo-responsive-iframe {
     position: absolute;
