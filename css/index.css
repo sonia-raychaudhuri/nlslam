@@ -193,23 +193,6 @@ table.data-table h3 {
     margin: 10px;
   }
 
-.publication-video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-
-    overflow: hidden;
-    border-radius: 10px !important;
-}
-
-.publication-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 .vdo-responsive-container {
     position: relative;
     overflow: hidden;
