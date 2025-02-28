@@ -87,15 +87,14 @@ during navigation. The robot selects the next waypoint from the inferred graph a
                             Our LIFGIF method stems from a key insight: language
 instructions not only guide the robot’s navigation but also
 encode crucial spatial information about the environment’s
-layout. Even before making any observations, these instruc-
-tions provide the robot with a preliminary understanding of
+layout. Even before making any observations, these instructions provide the robot with a preliminary understanding of
 the environment’s map, albeit with significant uncertainty.
 For instance, the instruction “move forward until you see
 a chair.” implies the presence of a chair somewhere along
 the forward direction (x-axis) relative to the robot’s current
 position, even if we don’t know the exact distance to the
 chair. By representing this spatial information as a factor
-graph [67], we can integrate it as a prior into a traditional
+graph, we can integrate it as a prior into a traditional
 factor-graph-based SLAM system. As the robot observes
 landmarks mentioned in the instructions, the uncertainty
 associated with these landmarks diminishes substantially,
@@ -104,7 +103,7 @@ of the instructions during navigation. This effectively bridges
 the gap between linguistic guidance and spatial awareness.
                         </p>
                         <br/>
-                        <div class="text-center">
+                        <div class="col-lg-8 col-md8 col-sm-12 col-xs-12text-center">
                             <image src="images/inferred_graph_example.png" class="img-fluid" />
                         </div>
                     </div>
@@ -112,7 +111,7 @@ the gap between linguistic guidance and spatial awareness.
                 </div>
 
                 <div class="row">
-                    <h2>Videos</h2>
+                    <h2>Demonstration on a Spot robot</h2>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                         <video controls="controls" width="800" height="600" name="Video Name">
                           <source src="images/real_video1.mov">
@@ -135,6 +134,17 @@ the gap between linguistic guidance and spatial awareness.
                         </video>
                         <br>
                         <strong>"Move forward to the chair. Turn right and move towards the bench. Stop there."</strong>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2>Evaluating in simulation</h2>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <video controls="controls" width="800" height="600" name="Video Name">
+                          <source src="images/sim_video.mov">
+                        </video>
+                        <br>
+                        <strong>"Move forward to the brown couch. Stop at the fireplace."</strong>
                     </div>
                 </div>
 
